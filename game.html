@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/game.css">
+    <link rel="stylesheet" href="./CSS/modal.css">
+    <link rel="stylesheet" href="./CSS/media.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Merienda:wght@800&family=Open+Sans:ital,wght@0,300;0,400;1,300&family=Press+Start+2P&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Modal -->
+    <div id="myModal" class="modal hidden">
+        <div class="modal-content" >
+            <div class="modal-header">
+            <span class="close">&times;</span>
+            <h1 class="game-inst">Game Instructions:</h1>
+            </div>
+            <div class="modal-body">
+                <ol type="1">
+                    <li>You have 3 types of tools:
+                        <ol type="a">
+                            <li ><img src="./Img/tree_axe-removebg-preview.png" height="30px" alt="">   Iaxe - for cutting trees </li>
+                            <li><img src="./Img/stone_axe-removebg-preview.png" height="30px" alt=""> Pickaxe - for mining rocks</li>
+                            <li><img src="./Img/tree_axe-removebg-preview.png" height="30px" alt=""> Shovel - for digging dirt</li>
+                        </ol>
+                        </li>
+                    <li>Clicking on a tool followed by clicking on a tile in the world will remove the tile</li>
+                    <li> Users can click on the tile in the inventory and place it back in the world (just the last one).</li>
+                </ol>
+                <button id="letStart" id="button-start-game-modal"> I"m Ready To Start </button>
+            </div>
+        </div>
+    </div>
+<!-- Game Page -->
+    <section id="game-page">
+        <main class="main-conatiner">
+            <!-- left side -->
+            <div id="storage">
+                <div class="Minecraft-container" ></div>
+                <div id="dirt-storage" class="stro">
+                    <button class="btn" id="dirt-img"><img  class="img-storage" src="./Img/mineCraft/Dirt_29_JE2_BE2.webp"  alt=""></button>
+                    <p class="num dirt-num">0</p>
+                </div>
+
+                <div id="grass-storage" class="stro">
+                    <button  class="btn" id="grass-img"><img class="img-storage" src="./Img/mineCraft/Grass_Block_29_JE2_BE2.webp" alt=""></button>
+                    <p class="num grass-num">0</p>
+                </div>
+
+                <div id="flowers-storage" class="stro">
+                    <button class="btn" id="flowers-img"><img class="img-storage" src="./Img/mineCraft/Red_Tulip_29_JE2_BE2.webp" alt=""> </button>
+                    <p class="num flowers-num">0</p>
+                </div>
+
+                <div id="log1-storage" class="stro">
+                    <button class="btn" id="log-img"><img class="img-storage" src="./Img/mineCraft/Oak_Log_29_JE4_BE2.webp" alt=""> </button>
+                    <p class="num log1-num">0</p>
+                </div>
+
+                <div id="leaf-storage" class="stro">
+                    <button class="btn" id="leaf-img"><img class="img-storage" src="./Img/mineCraft/Bamboo_29_JE12.webp" alt=""> </button>
+                    <p class="num leaf-num">0</p>
+                </div>
+
+                <div id="stone-storage" class="stro">
+                    <button class="btn" id="stone-img"><img class="img-storage" src="./Img/mineCraft/rock.webp" alt=""> </button>
+                    <p class="num stone-num">0</p>
+                </div>
+            </div>
+            <!-- the game board -->
+            <div class="game-board"> </div>
+        </main>
+            <!-- right side -->
+        <aside id="right-side">
+            <div class="right-style">
+                <button id="soil_axe"> <img src="./Img/soil_axe-removebg-preview.png" height="80%" alt=""></button>
+                <button id="stone_axe"> <img src="./Img/stone_axe-removebg-preview.png" height="80%" alt=""> </button>
+                <button id="tree_axe"> <img src="./Img/tree_axe-removebg-preview.png" height="80%" alt=""></button>
+            </div>
+            <button id="restart-button">Restart</button>
+            <button id="home-button">Home </button>
+        </aside>
+    </section>
+
+    <script src="./mudule/game.js" defer type="module"></script>
+</body>
+</html>

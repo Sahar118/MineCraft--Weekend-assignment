@@ -1,0 +1,50 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+
+    height: 100vmin;
+    width: 100%;
+    
+}
+#start-page{
+    background: url(/Img/52.jpg) no-repeat center center/cover;
+    height: 100vmin;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.logo{
+    height: 20vmax;
+    width: 110vmin;
+    z-index: 2;
+    margin-top: -5%;
+}
+
+#start-Button{
+    width: 20%;
+    height: 7%;
+    opacity: 0.6;
+    font-size: 120%;
+    font-weight: 700;
+    font-family: 'Press Start 2P', cursive;
+    margin-top: 13%;
+    border: 5px solid black;
+    cursor: pointer;
+}
+
+#start-Button:hover{
+    width: 22%;
+    height: 9%;
+    background-color: black;
+    font-size: 150%;
+    color: gray;
+    border: 5px solid ghostwhite;
+    opacity: 0.7;
+
+}

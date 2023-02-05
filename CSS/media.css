@@ -1,0 +1,14 @@
+@media only screen and (max-width: 600px) and (min-width: 400px) {
+    body{
+        font-size: small;
+    }
+    .game-board{
+        width: 70vmin;
+    }
+    .modal{
+        font-size: small;
+    }
+    #letStart{
+        margin-left: 70px;
+    }
+}
