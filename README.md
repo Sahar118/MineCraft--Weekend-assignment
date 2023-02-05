@@ -18,3 +18,7 @@ according to #1) and add it to the inventory.
 it back in the world (just the last one)
 
 # Screenshots:
+
+![plot](./Readme/landing-page.jpg) 
+![plot](./Readme/game-instruction.jpg) 
+![plot](./Readme/game-board.jpg) 
