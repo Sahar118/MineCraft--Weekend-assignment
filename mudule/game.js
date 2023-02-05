@@ -177,50 +177,50 @@ function clickedDiv(event){
 
 
 function putInMat(element){
-    if(inventory.currentMaterial==inventory.log1 && inventory.count.logNum>0 && !element.target.getAttribute('class').includes(inventory.log1)){
+    if(inventory.currentMaterial==inventory.log1 && inventory.count.logNum>0 ){
         element.target.classList.add(inventory.log1)
         inventory.count.logNum--;
         logNum.textContent=`${inventory.count.logNum}`
     }
-    else if(inventory.currentMaterial==inventory.leaf&&inventory.count.leafNum>0&&!element.target.getAttribute('class').includes(inventory.leaf)){
+    else if(inventory.currentMaterial==inventory.leaf&&inventory.count.leafNum>0){
 
         element.target.classList.add(inventory.leaf)
         inventory.count.leafNum--;
         leafNum.textContent=` ${inventory.count.leafNum}`
     }
-    else if(inventory.currentMaterial==inventory.stone&&inventory.count.stoneNum>0&&!element.target.getAttribute('class').includes(inventory.stone)){
+    else if(inventory.currentMaterial==inventory.stone&&inventory.count.stoneNum>0){
 
 
         element.target.classList.add(inventory.stone)
         inventory.count.stoneNum--;
         stoneNum.textContent=` ${inventory.count.stoneNum}`
     }
-    else if(inventory.currentMaterial==inventory.grass&&inventory.count.grassNum>0&&!element.target.getAttribute('class').includes(inventory.grass)){
+    else if(inventory.currentMaterial==inventory.grass&&inventory.count.grassNum>0){
         element.target.classList.add(inventory.grass)
         inventory.count.grassNum--;
         grassNum.textContent=`${inventory.count.grassNum}`
     }
-    else if(inventory.currentMaterial==inventory.dirt&&inventory.count.dirtNum>0&&!element.target.getAttribute('class').includes(inventory.dirt)){
+    else if(inventory.currentMaterial==inventory.dirt&&inventory.count.dirtNum>0){
         element.target.classList.add(inventory.dirt)
         inventory.count.dirtNum--;
         dirtNum.textContent=` ${inventory.count.dirtNum}`
     }
-        else if(inventory.currentMaterial==inventory.tulip1&&inventory.count.flowersNum>0&&!element.target.getAttribute('class').includes(inventory.tulip1) ){
+        else if(inventory.currentMaterial==inventory.tulip1&&inventory.count.flowersNum>0 ){
         element.target.classList.add(inventory.tulip1)
         inventory.count.flowersNum--;
         flowersNum.textContent=` ${inventory.count.flowersNum}`
     }
-    else if(inventory.currentMaterial==inventory.tulip2&&inventory.count.flowersNum>0&&!element.target.getAttribute('class').includes(inventory.tulip2)){
+    else if(inventory.currentMaterial==inventory.tulip2&&inventory.count.flowersNum>0){
         element.target.classList.add(inventory.tulip2)
         inventory.count.flowersNum--;
         flowersNum.textContent=`${inventory.count.flowersNum}`
     }
-    else if(inventory.currentMaterial==inventory.tulip3&&inventory.count.flowersNum>0&&!element.target.getAttribute('class').includes(inventory.tulip3)){
+    else if(inventory.currentMaterial==inventory.tulip3&&inventory.count.flowersNum>0){
         element.target.classList.add(inventory.tulip3)
         inventory.count.flowersNum--;
         flowersNum.textContent=` ${inventory.count.flowersNum}`
     }
-    else if(inventory.currentMaterial==inventory.tulip4&&inventory.count.flowersNum>0&&!element.target.getAttribute('class').includes(inventory.tulip4)){
+    else if(inventory.currentMaterial==inventory.tulip4&&inventory.count.flowersNum>0){
         element.target.classList.add(inventory.tulip4)
         inventory.count.flowersNum--;
         flowersNum.textContent=` ${inventory.count.flowersNum}`
